@@ -181,7 +181,7 @@ main {
 .card img {
     width: 100%;
 }
-.created-4-u p {
+.main-content p {
     font-size: 12px;
     color: #6b6b6b;
     margin-top: 0.75rem;
@@ -191,6 +191,15 @@ main {
     justify-content: flex-start;
 }
 .created-4-u .card-container .card:first-child {
+    margin-right: 1rem;
+}
+.popular-artists .card-container .card img {
+    border-radius: 50%;
+}
+.popular-artists .card-container {
+    justify-content: flex-start;
+}
+.popular-artists .card-container .card:first-child {
     margin-right: 1rem;
 }
 .main-content {
