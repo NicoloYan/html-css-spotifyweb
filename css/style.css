@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Common */
+/* COMMON */
 
 html {
     font-family: 'Montserrat', sans-serif;
@@ -25,7 +25,7 @@ body {
     display: flex;
 }
 
-/* Effettua l'Upgrade */
+/* Upgrade section */
 
 .upgrade {
     background-color: rgba(0, 0, 0, 0.3);
@@ -48,10 +48,10 @@ body {
     border-radius: 20px;
 }
 .upgrade-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-/* Main */
+/* MAIN */
 
 main {
     background-color: #141922;
@@ -68,6 +68,7 @@ main {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 .logo {
     width: 65%;
@@ -205,16 +206,32 @@ main {
     overflow-y: auto;
     padding-top: 100px;
 }
+.content .categories .flex li a:first-child {
+    position: relative;
+}
+.green-bar {
+    position: absolute;
+    bottom: -7px;
+    right: 30px;
+    width: 45px;
+    border-radius: 25px;
+    border: 1px solid #adff2f;
+    background-color: #adff2f;
+    height: 4px;
+}
 .categories .flex {
     flex-wrap: wrap;
     list-style-type: none;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .categories .flex li a {
     color: #6b6b6b;
     text-decoration: none;
     margin: 0 1rem;
+}
+.categories .flex li {
+    margin: 1rem 0;
 }
 .categories .flex li a:hover {
     color: white;
@@ -262,20 +279,8 @@ main {
     margin-top: 0.75rem;
     margin-bottom: 1rem;
 }
-.created-4-u .card-container {
-    justify-content: flex-start;
-}
-.created-4-u .card-container .card:first-child {
-    margin-right: 1rem;
-}
 .popular-artists .card-container .card img {
     border-radius: 50%;
-}
-.popular-artists .card-container {
-    justify-content: flex-start;
-}
-.popular-artists .card-container .card:first-child {
-    margin-right: 1rem;
 }
 .main-content {
     color: white;
@@ -285,7 +290,7 @@ main {
     flex-direction: column;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     background-color: #282828;
@@ -296,6 +301,9 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+/* Left footer */
+
 .left-footer {
     display: flex;
     align-items: center;
@@ -326,6 +334,9 @@ footer {
 .artist-name {
     font-size: 10px;
 }
+
+/* Middle footer */
+
 .middle-footer {
     display: flex;
     flex-direction: column;
@@ -380,6 +391,9 @@ footer {
     border: #adff2f;
     background-color: #adff2f;
 }
+
+/* Right footer */
+
 .right-footer {
     display: flex;
     align-items: center;
