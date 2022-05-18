@@ -35,47 +35,71 @@
                 <div class="nav-links">
                     <ul>
                         <li>
-                            <img src="img/home.svg" alt="home icon">
-                            Home
+                            <a href="#">
+                                <img src="img/home.svg" alt="home icon">
+                                <span class="hidden-mobile">Home</span>
+                            </a>
                         </li>
                         <li>
-                            <img src="img/search.svg" alt="search icon">
-                            Cerca
+                            <a href="#">
+                                <img src="img/search.svg" alt="search icon">
+                                <span class="hidden-mobile">Cerca</span>
+                            </a>
                         </li>
                         <li>
-                            <img src="img/libreria.svg" alt="library icon">
-                            La tua libreria
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="library icon">
+                                <span class="hidden-mobile">La tua libreria</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!-- Playlists -->
-                <div class="playlists">
+                <div class="playlists hidden-mobile">
                     <h3 class="text-white">PLAYLIST</h3>
                     <div class="new-playlist">
-                        <div class="plus-btn">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div>Crea Playlist</div>
+                        <a href="#">
+                            <div class="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div>Crea Playlist</div>
+                        </a>
                     </div>
                     <ul class="playlist-list">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>      
                     </ul>
                 </div>
                 <!-- User info -->
-                <div class="user-info">
+                <div class="user-info flex-end-mobile">
                     <div class="download flex">
-                        <img src="img/download.svg" alt="download icon">
-                        Installa app
+                        <a href="#">
+                            <img src="img/download.svg" alt="download icon">
+                            <span class="hidden-mobile">Installa app</span>
+                        </a>
                     </div>
-                    <hr>
+                    <div class="bar-nav"></div>
                     <div class="username flex">
-                        <img src="img/profile.svg" alt="user picture">
-                        <span class="text-white">John Doe</span>
+                        <a href="#">
+                            <img src="img/profile.svg" alt="user picture">
+                            <span class="hidden-mobile text-white">John Doe</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -84,12 +108,36 @@
                 <!-- Top searchbar -->
                 <div class="categories">
                     <ul class="flex">
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li>
+                            <a href="#">
+                                IN EVIDENZA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                PODCAST
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CLASSIFICHE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                GENERI E MOOD
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                NUOVE USCITE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SCOPRI
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="main-content">
@@ -192,9 +240,11 @@
                     </div>
                 </div>
                 <div class="bottom-middle-footer">
+                    <span class="text-white">0.25</span>
                     <div class="bar">
                         <div class="live-bar"></div>
                     </div>
+                    <span class="text-white">4.35</span>
                 </div>
                 
             </div>
@@ -207,6 +257,9 @@
                 </div>
                 <div>
                     <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volume-bar">
+                    <div class="live-volume"></div>
                 </div>
             </div>
         </footer>
