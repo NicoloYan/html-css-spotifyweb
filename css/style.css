@@ -42,9 +42,12 @@ body {
     text-decoration: none;
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 40px;
     border: 1px solid white;
     border-radius: 20px;
+}
+.upgrade-btn:hover {
+    transform: scale(1.2);
 }
 
 /* Main */
@@ -89,9 +92,9 @@ main {
     text-decoration: none;
     color: #6b6b6b;
 }
-.nav-links ul li a:hover {
-    color: white;
+.nav-links ul li a:hover, .nav-links ul li a img:hover{
     opacity: 1.0;
+    color: white;
 }
 .nav-links ul li a img {
     opacity: 0.5;
@@ -126,7 +129,9 @@ main {
     text-decoration: none;
     color: #6b6b6b;
 }
-
+.new-playlist a:hover {
+    color: white;
+}
 .plus-btn {
     display: flex;
     justify-content: center;
@@ -151,6 +156,9 @@ main {
     text-decoration: none;
     color: #6b6b6b;
 }
+.playlist-list li a:hover {
+    color: white;
+}
 .user-info {
     height: 60px;
     padding-left: 1rem;
@@ -169,6 +177,9 @@ main {
     align-items: center;
     text-decoration: none;
     color: #6b6b6b;
+}
+.user-info .download a:hover {
+    color: white;
 }
 .username img {
     width: 25px;
@@ -204,10 +215,29 @@ main {
     color: #6b6b6b;
     text-decoration: none;
 }
+.categories .flex li a:hover {
+    color: white;
+}
 .card-container {
     width: 95%;
     margin: 2rem 0;
     gap: 1.2rem;
+}
+.img-box {
+    position: relative;
+}
+.img-box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.card:hover i {
+    display: block;
+}
+.card:hover img {
+    filter: opacity(0.5);
 }
 .card {
     width: calc( (100% / 6) - 1rem )
@@ -281,6 +311,13 @@ footer {
     display: flex;
     flex-direction: column;
     margin-right: 2rem;
+}
+.left-footer a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+.left-footer a:hover {
+    color: white;
 }
 .track-name {
     font-size: 10px;
